@@ -1,0 +1,756 @@
+<html><body><h1>C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py</h1>Killed 67 out of 136 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 124</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -3,7 +3,7 @@
+ """States."""
+ 
+ STATES = {
+-    ('S0', 'S1'): {'return_token': False},
++    ('XXS0XX', 'S1'): {'return_token': False},
+     ('S0', 'S3'): {'return_token': False},
+     ('S0', 'S4'): {'return_token': False},
+ 
+</pre><h3>Mutant 125</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -3,7 +3,7 @@
+ """States."""
+ 
+ STATES = {
+-    ('S0', 'S1'): {'return_token': False},
++    ('S0', 'XXS1XX'): {'return_token': False},
+     ('S0', 'S3'): {'return_token': False},
+     ('S0', 'S4'): {'return_token': False},
+ 
+</pre><h3>Mutant 126</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -3,7 +3,7 @@
+ """States."""
+ 
+ STATES = {
+-    ('S0', 'S1'): {'return_token': False},
++    ('S0', 'S1'): {'XXreturn_tokenXX': False},
+     ('S0', 'S3'): {'return_token': False},
+     ('S0', 'S4'): {'return_token': False},
+ 
+</pre><h3>Mutant 127</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -3,7 +3,7 @@
+ """States."""
+ 
+ STATES = {
+-    ('S0', 'S1'): {'return_token': False},
++    ('S0', 'S1'): {'return_token': True},
+     ('S0', 'S3'): {'return_token': False},
+     ('S0', 'S4'): {'return_token': False},
+ 
+</pre><h3>Mutant 128</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -4,7 +4,7 @@
+ 
+ STATES = {
+     ('S0', 'S1'): {'return_token': False},
+-    ('S0', 'S3'): {'return_token': False},
++    ('XXS0XX', 'S3'): {'return_token': False},
+     ('S0', 'S4'): {'return_token': False},
+ 
+     ('S1', 'S1'): {'return_token': False},
+</pre><h3>Mutant 129</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -4,7 +4,7 @@
+ 
+ STATES = {
+     ('S0', 'S1'): {'return_token': False},
+-    ('S0', 'S3'): {'return_token': False},
++    ('S0', 'XXS3XX'): {'return_token': False},
+     ('S0', 'S4'): {'return_token': False},
+ 
+     ('S1', 'S1'): {'return_token': False},
+</pre><h3>Mutant 130</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -4,7 +4,7 @@
+ 
+ STATES = {
+     ('S0', 'S1'): {'return_token': False},
+-    ('S0', 'S3'): {'return_token': False},
++    ('S0', 'S3'): {'XXreturn_tokenXX': False},
+     ('S0', 'S4'): {'return_token': False},
+ 
+     ('S1', 'S1'): {'return_token': False},
+</pre><h3>Mutant 131</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -4,7 +4,7 @@
+ 
+ STATES = {
+     ('S0', 'S1'): {'return_token': False},
+-    ('S0', 'S3'): {'return_token': False},
++    ('S0', 'S3'): {'return_token': True},
+     ('S0', 'S4'): {'return_token': False},
+ 
+     ('S1', 'S1'): {'return_token': False},
+</pre><h3>Mutant 132</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -5,7 +5,7 @@
+ STATES = {
+     ('S0', 'S1'): {'return_token': False},
+     ('S0', 'S3'): {'return_token': False},
+-    ('S0', 'S4'): {'return_token': False},
++    ('XXS0XX', 'S4'): {'return_token': False},
+ 
+     ('S1', 'S1'): {'return_token': False},
+     ('S1', 'S11'): {'return_token': False},
+</pre><h3>Mutant 133</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -5,7 +5,7 @@
+ STATES = {
+     ('S0', 'S1'): {'return_token': False},
+     ('S0', 'S3'): {'return_token': False},
+-    ('S0', 'S4'): {'return_token': False},
++    ('S0', 'XXS4XX'): {'return_token': False},
+ 
+     ('S1', 'S1'): {'return_token': False},
+     ('S1', 'S11'): {'return_token': False},
+</pre><h3>Mutant 134</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -5,7 +5,7 @@
+ STATES = {
+     ('S0', 'S1'): {'return_token': False},
+     ('S0', 'S3'): {'return_token': False},
+-    ('S0', 'S4'): {'return_token': False},
++    ('S0', 'S4'): {'XXreturn_tokenXX': False},
+ 
+     ('S1', 'S1'): {'return_token': False},
+     ('S1', 'S11'): {'return_token': False},
+</pre><h3>Mutant 135</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -5,7 +5,7 @@
+ STATES = {
+     ('S0', 'S1'): {'return_token': False},
+     ('S0', 'S3'): {'return_token': False},
+-    ('S0', 'S4'): {'return_token': False},
++    ('S0', 'S4'): {'return_token': True},
+ 
+     ('S1', 'S1'): {'return_token': False},
+     ('S1', 'S11'): {'return_token': False},
+</pre><h3>Mutant 148</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -10,7 +10,7 @@
+     ('S1', 'S1'): {'return_token': False},
+     ('S1', 'S11'): {'return_token': False},
+     ('S1', 'S3'): {'return_token': True},
+-    ('S1', 'S4'): {'return_token': True},
++    ('XXS1XX', 'S4'): {'return_token': True},
+     ('S1', 'S5'): {'return_token': True},
+     ('S1', 'S6'): {'return_token': True},
+     ('S1', 'S7'): {'return_token': True},
+</pre><h3>Mutant 149</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -10,7 +10,7 @@
+     ('S1', 'S1'): {'return_token': False},
+     ('S1', 'S11'): {'return_token': False},
+     ('S1', 'S3'): {'return_token': True},
+-    ('S1', 'S4'): {'return_token': True},
++    ('S1', 'XXS4XX'): {'return_token': True},
+     ('S1', 'S5'): {'return_token': True},
+     ('S1', 'S6'): {'return_token': True},
+     ('S1', 'S7'): {'return_token': True},
+</pre><h3>Mutant 150</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -10,7 +10,7 @@
+     ('S1', 'S1'): {'return_token': False},
+     ('S1', 'S11'): {'return_token': False},
+     ('S1', 'S3'): {'return_token': True},
+-    ('S1', 'S4'): {'return_token': True},
++    ('S1', 'S4'): {'XXreturn_tokenXX': True},
+     ('S1', 'S5'): {'return_token': True},
+     ('S1', 'S6'): {'return_token': True},
+     ('S1', 'S7'): {'return_token': True},
+</pre><h3>Mutant 151</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -10,7 +10,7 @@
+     ('S1', 'S1'): {'return_token': False},
+     ('S1', 'S11'): {'return_token': False},
+     ('S1', 'S3'): {'return_token': True},
+-    ('S1', 'S4'): {'return_token': True},
++    ('S1', 'S4'): {'return_token': False},
+     ('S1', 'S5'): {'return_token': True},
+     ('S1', 'S6'): {'return_token': True},
+     ('S1', 'S7'): {'return_token': True},
+</pre><h3>Mutant 176</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -19,7 +19,7 @@
+ 
+     ('S2', 'S2'): {'return_token': False},
+     ('S2', 'S3'): {'return_token': True},
+-    ('S2', 'S4'): {'return_token': True},
++    ('XXS2XX', 'S4'): {'return_token': True},
+     ('S2', 'S5'): {'return_token': True},
+     ('S2', 'S6'): {'return_token': True},
+     ('S2', 'S7'): {'return_token': True},
+</pre><h3>Mutant 177</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -19,7 +19,7 @@
+ 
+     ('S2', 'S2'): {'return_token': False},
+     ('S2', 'S3'): {'return_token': True},
+-    ('S2', 'S4'): {'return_token': True},
++    ('S2', 'XXS4XX'): {'return_token': True},
+     ('S2', 'S5'): {'return_token': True},
+     ('S2', 'S6'): {'return_token': True},
+     ('S2', 'S7'): {'return_token': True},
+</pre><h3>Mutant 178</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -19,7 +19,7 @@
+ 
+     ('S2', 'S2'): {'return_token': False},
+     ('S2', 'S3'): {'return_token': True},
+-    ('S2', 'S4'): {'return_token': True},
++    ('S2', 'S4'): {'XXreturn_tokenXX': True},
+     ('S2', 'S5'): {'return_token': True},
+     ('S2', 'S6'): {'return_token': True},
+     ('S2', 'S7'): {'return_token': True},
+</pre><h3>Mutant 179</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -19,7 +19,7 @@
+ 
+     ('S2', 'S2'): {'return_token': False},
+     ('S2', 'S3'): {'return_token': True},
+-    ('S2', 'S4'): {'return_token': True},
++    ('S2', 'S4'): {'return_token': False},
+     ('S2', 'S5'): {'return_token': True},
+     ('S2', 'S6'): {'return_token': True},
+     ('S2', 'S7'): {'return_token': True},
+</pre><h3>Mutant 180</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -20,7 +20,7 @@
+     ('S2', 'S2'): {'return_token': False},
+     ('S2', 'S3'): {'return_token': True},
+     ('S2', 'S4'): {'return_token': True},
+-    ('S2', 'S5'): {'return_token': True},
++    ('XXS2XX', 'S5'): {'return_token': True},
+     ('S2', 'S6'): {'return_token': True},
+     ('S2', 'S7'): {'return_token': True},
+ 
+</pre><h3>Mutant 181</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -20,7 +20,7 @@
+     ('S2', 'S2'): {'return_token': False},
+     ('S2', 'S3'): {'return_token': True},
+     ('S2', 'S4'): {'return_token': True},
+-    ('S2', 'S5'): {'return_token': True},
++    ('S2', 'XXS5XX'): {'return_token': True},
+     ('S2', 'S6'): {'return_token': True},
+     ('S2', 'S7'): {'return_token': True},
+ 
+</pre><h3>Mutant 182</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -20,7 +20,7 @@
+     ('S2', 'S2'): {'return_token': False},
+     ('S2', 'S3'): {'return_token': True},
+     ('S2', 'S4'): {'return_token': True},
+-    ('S2', 'S5'): {'return_token': True},
++    ('S2', 'S5'): {'XXreturn_tokenXX': True},
+     ('S2', 'S6'): {'return_token': True},
+     ('S2', 'S7'): {'return_token': True},
+ 
+</pre><h3>Mutant 183</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -20,7 +20,7 @@
+     ('S2', 'S2'): {'return_token': False},
+     ('S2', 'S3'): {'return_token': True},
+     ('S2', 'S4'): {'return_token': True},
+-    ('S2', 'S5'): {'return_token': True},
++    ('S2', 'S5'): {'return_token': False},
+     ('S2', 'S6'): {'return_token': True},
+     ('S2', 'S7'): {'return_token': True},
+ 
+</pre><h3>Mutant 184</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -21,7 +21,7 @@
+     ('S2', 'S3'): {'return_token': True},
+     ('S2', 'S4'): {'return_token': True},
+     ('S2', 'S5'): {'return_token': True},
+-    ('S2', 'S6'): {'return_token': True},
++    ('XXS2XX', 'S6'): {'return_token': True},
+     ('S2', 'S7'): {'return_token': True},
+ 
+     ('S3', 'S1'): {'return_token': True},
+</pre><h3>Mutant 185</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -21,7 +21,7 @@
+     ('S2', 'S3'): {'return_token': True},
+     ('S2', 'S4'): {'return_token': True},
+     ('S2', 'S5'): {'return_token': True},
+-    ('S2', 'S6'): {'return_token': True},
++    ('S2', 'XXS6XX'): {'return_token': True},
+     ('S2', 'S7'): {'return_token': True},
+ 
+     ('S3', 'S1'): {'return_token': True},
+</pre><h3>Mutant 186</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -21,7 +21,7 @@
+     ('S2', 'S3'): {'return_token': True},
+     ('S2', 'S4'): {'return_token': True},
+     ('S2', 'S5'): {'return_token': True},
+-    ('S2', 'S6'): {'return_token': True},
++    ('S2', 'S6'): {'XXreturn_tokenXX': True},
+     ('S2', 'S7'): {'return_token': True},
+ 
+     ('S3', 'S1'): {'return_token': True},
+</pre><h3>Mutant 187</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -21,7 +21,7 @@
+     ('S2', 'S3'): {'return_token': True},
+     ('S2', 'S4'): {'return_token': True},
+     ('S2', 'S5'): {'return_token': True},
+-    ('S2', 'S6'): {'return_token': True},
++    ('S2', 'S6'): {'return_token': False},
+     ('S2', 'S7'): {'return_token': True},
+ 
+     ('S3', 'S1'): {'return_token': True},
+</pre><h3>Mutant 188</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -22,7 +22,7 @@
+     ('S2', 'S4'): {'return_token': True},
+     ('S2', 'S5'): {'return_token': True},
+     ('S2', 'S6'): {'return_token': True},
+-    ('S2', 'S7'): {'return_token': True},
++    ('XXS2XX', 'S7'): {'return_token': True},
+ 
+     ('S3', 'S1'): {'return_token': True},
+ 
+</pre><h3>Mutant 189</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -22,7 +22,7 @@
+     ('S2', 'S4'): {'return_token': True},
+     ('S2', 'S5'): {'return_token': True},
+     ('S2', 'S6'): {'return_token': True},
+-    ('S2', 'S7'): {'return_token': True},
++    ('S2', 'XXS7XX'): {'return_token': True},
+ 
+     ('S3', 'S1'): {'return_token': True},
+ 
+</pre><h3>Mutant 190</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -22,7 +22,7 @@
+     ('S2', 'S4'): {'return_token': True},
+     ('S2', 'S5'): {'return_token': True},
+     ('S2', 'S6'): {'return_token': True},
+-    ('S2', 'S7'): {'return_token': True},
++    ('S2', 'S7'): {'XXreturn_tokenXX': True},
+ 
+     ('S3', 'S1'): {'return_token': True},
+ 
+</pre><h3>Mutant 191</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -22,7 +22,7 @@
+     ('S2', 'S4'): {'return_token': True},
+     ('S2', 'S5'): {'return_token': True},
+     ('S2', 'S6'): {'return_token': True},
+-    ('S2', 'S7'): {'return_token': True},
++    ('S2', 'S7'): {'return_token': False},
+ 
+     ('S3', 'S1'): {'return_token': True},
+ 
+</pre><h3>Mutant 196</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -26,7 +26,7 @@
+ 
+     ('S3', 'S1'): {'return_token': True},
+ 
+-    ('S4', 'S1'): {'return_token': True},
++    ('XXS4XX', 'S1'): {'return_token': True},
+ 
+     ('S5', 'S1'): {'return_token': True},
+ 
+</pre><h3>Mutant 197</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -26,7 +26,7 @@
+ 
+     ('S3', 'S1'): {'return_token': True},
+ 
+-    ('S4', 'S1'): {'return_token': True},
++    ('S4', 'XXS1XX'): {'return_token': True},
+ 
+     ('S5', 'S1'): {'return_token': True},
+ 
+</pre><h3>Mutant 198</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -26,7 +26,7 @@
+ 
+     ('S3', 'S1'): {'return_token': True},
+ 
+-    ('S4', 'S1'): {'return_token': True},
++    ('S4', 'S1'): {'XXreturn_tokenXX': True},
+ 
+     ('S5', 'S1'): {'return_token': True},
+ 
+</pre><h3>Mutant 199</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -26,7 +26,7 @@
+ 
+     ('S3', 'S1'): {'return_token': True},
+ 
+-    ('S4', 'S1'): {'return_token': True},
++    ('S4', 'S1'): {'return_token': False},
+ 
+     ('S5', 'S1'): {'return_token': True},
+ 
+</pre><h3>Mutant 214</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -35,7 +35,7 @@
+     ('S7', 'S1'): {'return_token': True},
+ }
+ 
+-FINAL_STATES = ['S1', 'S2']
++FINAL_STATES = ['S1', 'XXS2XX']
+ 
+ 
+ def S0(char):
+</pre><h3>Mutant 218</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -43,7 +43,7 @@
+         return S1
+     elif char == '+':
+         return S3
+-    elif char == '-':
++    elif char != '-':
+         return S4
+     else:
+         raise Exception('Unexpected character ' + char)
+</pre><h3>Mutant 219</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -43,7 +43,7 @@
+         return S1
+     elif char == '+':
+         return S3
+-    elif char == '-':
++    elif char == 'XX-XX':
+         return S4
+     else:
+         raise Exception('Unexpected character ' + char)
+</pre><h3>Mutant 220</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -46,7 +46,7 @@
+     elif char == '-':
+         return S4
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('XXUnexpected character XX' + char)
+ 
+ 
+ def S1(char):
+</pre><h3>Mutant 221</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -46,7 +46,7 @@
+     elif char == '-':
+         return S4
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('Unexpected character ' - char)
+ 
+ 
+ def S1(char):
+</pre><h3>Mutant 225</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -54,7 +54,7 @@
+         return S1
+     elif char == '+':
+         return S3
+-    elif char == '-':
++    elif char == 'XX-XX':
+         return S4
+     elif char == '.':
+         return S11
+</pre><h3>Mutant 234</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -65,7 +65,7 @@
+     elif char == '/':
+         return S7
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('XXUnexpected character XX' + char)
+ 
+ 
+ def S11(char):
+</pre><h3>Mutant 235</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -65,7 +65,7 @@
+     elif char == '/':
+         return S7
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('Unexpected character ' - char)
+ 
+ 
+ def S11(char):
+</pre><h3>Mutant 236</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -72,7 +72,7 @@
+     if char.isdigit():
+         return S2
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('XXUnexpected character XX' + char)
+ 
+ 
+ def S2(char):
+</pre><h3>Mutant 237</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -72,7 +72,7 @@
+     if char.isdigit():
+         return S2
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('Unexpected character ' - char)
+ 
+ 
+ def S2(char):
+</pre><h3>Mutant 240</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -80,7 +80,7 @@
+         return S2
+     elif char == '+':
+         return S3
+-    elif char == '-':
++    elif char != '-':
+         return S4
+     elif char == '*':
+         return S5
+</pre><h3>Mutant 241</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -80,7 +80,7 @@
+         return S2
+     elif char == '+':
+         return S3
+-    elif char == '-':
++    elif char == 'XX-XX':
+         return S4
+     elif char == '*':
+         return S5
+</pre><h3>Mutant 242</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -82,7 +82,7 @@
+         return S3
+     elif char == '-':
+         return S4
+-    elif char == '*':
++    elif char != '*':
+         return S5
+     elif char == '^':
+         return S6
+</pre><h3>Mutant 243</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -82,7 +82,7 @@
+         return S3
+     elif char == '-':
+         return S4
+-    elif char == '*':
++    elif char == 'XX*XX':
+         return S5
+     elif char == '^':
+         return S6
+</pre><h3>Mutant 244</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -84,7 +84,7 @@
+         return S4
+     elif char == '*':
+         return S5
+-    elif char == '^':
++    elif char != '^':
+         return S6
+     elif char == '/':
+         return S7
+</pre><h3>Mutant 245</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -84,7 +84,7 @@
+         return S4
+     elif char == '*':
+         return S5
+-    elif char == '^':
++    elif char == 'XX^XX':
+         return S6
+     elif char == '/':
+         return S7
+</pre><h3>Mutant 246</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -86,7 +86,7 @@
+         return S5
+     elif char == '^':
+         return S6
+-    elif char == '/':
++    elif char != '/':
+         return S7
+     else:
+         raise Exception('Unexpected character ' + char)
+</pre><h3>Mutant 247</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -86,7 +86,7 @@
+         return S5
+     elif char == '^':
+         return S6
+-    elif char == '/':
++    elif char == 'XX/XX':
+         return S7
+     else:
+         raise Exception('Unexpected character ' + char)
+</pre><h3>Mutant 248</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -89,7 +89,7 @@
+     elif char == '/':
+         return S7
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('XXUnexpected character XX' + char)
+ 
+ 
+ def S3(char):
+</pre><h3>Mutant 249</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -89,7 +89,7 @@
+     elif char == '/':
+         return S7
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('Unexpected character ' - char)
+ 
+ 
+ def S3(char):
+</pre><h3>Mutant 250</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -96,7 +96,7 @@
+     if char.isdigit():
+         return S1
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('XXUnexpected character XX' + char)
+ 
+ 
+ def S4(char):
+</pre><h3>Mutant 251</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -96,7 +96,7 @@
+     if char.isdigit():
+         return S1
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('Unexpected character ' - char)
+ 
+ 
+ def S4(char):
+</pre><h3>Mutant 252</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -103,7 +103,7 @@
+     if char.isdigit():
+         return S1
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('XXUnexpected character XX' + char)
+ 
+ 
+ def S5(char):
+</pre><h3>Mutant 253</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -103,7 +103,7 @@
+     if char.isdigit():
+         return S1
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('Unexpected character ' - char)
+ 
+ 
+ def S5(char):
+</pre><h3>Mutant 254</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -110,7 +110,7 @@
+     if char.isdigit():
+         return S1
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('XXUnexpected character XX' + char)
+ 
+ 
+ def S6(char):
+</pre><h3>Mutant 255</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -110,7 +110,7 @@
+     if char.isdigit():
+         return S1
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('Unexpected character ' - char)
+ 
+ 
+ def S6(char):
+</pre><h3>Mutant 256</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -117,7 +117,7 @@
+     if char.isdigit():
+         return S1
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('XXUnexpected character XX' + char)
+ 
+ 
+ def S7(char):
+</pre><h3>Mutant 257</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -117,7 +117,7 @@
+     if char.isdigit():
+         return S1
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('Unexpected character ' - char)
+ 
+ 
+ def S7(char):
+</pre><h3>Mutant 258</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -124,5 +124,5 @@
+     if char.isdigit():
+         return S1
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('XXUnexpected character XX' + char)
+ 
+</pre><h3>Mutant 259</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -124,5 +124,5 @@
+     if char.isdigit():
+         return S1
+     else:
+-        raise Exception('Unexpected character ' + char)
++        raise Exception('Unexpected character ' - char)
+ 
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 165</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -15,7 +15,7 @@
+     ('S1', 'S6'): {'return_token': True},
+     ('S1', 'S7'): {'return_token': True},
+ 
+-    ('S11', 'S2'): {'return_token': False},
++    ('S11', 'XXS2XX'): {'return_token': False},
+ 
+     ('S2', 'S2'): {'return_token': False},
+     ('S2', 'S3'): {'return_token': True},
+</pre><h3>Mutant 206</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -30,7 +30,7 @@
+ 
+     ('S5', 'S1'): {'return_token': True},
+ 
+-    ('S6', 'S1'): {'return_token': True},
++    ('S6', 'S1'): {'XXreturn_tokenXX': True},
+ 
+     ('S7', 'S1'): {'return_token': True},
+ }
+</pre><h3>Mutant 238</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\states.py
+@@ -78,7 +78,7 @@
+ def S2(char):
+     if char.isdigit():
+         return S2
+-    elif char == '+':
++    elif char != '+':
+         return S3
+     elif char == '-':
+         return S4
+</pre></body></html>

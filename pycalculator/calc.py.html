@@ -1,0 +1,43 @@
+<html><body><h1>C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\calc.py</h1>Killed 3 out of 7 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 3</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\calc.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\calc.py
+@@ -11,7 +11,7 @@
+ def validate_argv(argv):
+     """Validates argv."""
+     if len(argv) != 2:
+-        raise Exception("Incorrect number of parameters.")
++        raise Exception("XXIncorrect number of parameters.XX")
+ 
+ if __name__ == "__main__":
+     validate_argv(sys.argv)
+</pre><h3>Mutant 5</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\calc.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\calc.py
+@@ -13,7 +13,7 @@
+     if len(argv) != 2:
+         raise Exception("Incorrect number of parameters.")
+ 
+-if __name__ == "__main__":
++if __name__ == "XX__main__XX":
+     validate_argv(sys.argv)
+ 
+     analzr = Analyzer(sys.argv[1])
+</pre><h3>Mutant 6</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\calc.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\calc.py
+@@ -16,6 +16,6 @@
+ if __name__ == "__main__":
+     validate_argv(sys.argv)
+ 
+-    analzr = Analyzer(sys.argv[1])
++    analzr = Analyzer(sys.argv[2])
+     print(analzr.analyze())
+ 
+</pre><h3>Mutant 7</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\calc.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\calc.py
+@@ -16,6 +16,6 @@
+ if __name__ == "__main__":
+     validate_argv(sys.argv)
+ 
+-    analzr = Analyzer(sys.argv[1])
++    analzr = None
+     print(analzr.analyze())
+ 
+</pre></body></html>

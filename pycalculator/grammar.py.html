@@ -1,0 +1,374 @@
+<html><body><h1>C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py</h1>Killed 43 out of 77 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 8</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -8,7 +8,7 @@
+ class Analyzer(object):
+ 
+     def __init__(self, initial_entry):
+-        self.preanalysis = ''
++        self.preanalysis = 'XXXX'
+         self.parser = Parser(initial_entry)
+ 
+     def next_token(self):
+</pre><h3>Mutant 9</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -8,7 +8,7 @@
+ class Analyzer(object):
+ 
+     def __init__(self, initial_entry):
+-        self.preanalysis = ''
++        self.preanalysis = None
+         self.parser = Parser(initial_entry)
+ 
+     def next_token(self):
+</pre><h3>Mutant 19</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -25,7 +25,7 @@
+         result = self.start()
+ 
+         if self.preanalysis != '$':
+-            raise Exception('Found ' + self.preanalysis + ', expecting ' + '""')
++            raise Exception('XXFound XX' + self.preanalysis + ', expecting ' + '""')
+ 
+         return result
+ 
+</pre><h3>Mutant 20</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -25,7 +25,7 @@
+         result = self.start()
+ 
+         if self.preanalysis != '$':
+-            raise Exception('Found ' + self.preanalysis + ', expecting ' + '""')
++            raise Exception('Found ' - self.preanalysis + ', expecting ' + '""')
+ 
+         return result
+ 
+</pre><h3>Mutant 21</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -25,7 +25,7 @@
+         result = self.start()
+ 
+         if self.preanalysis != '$':
+-            raise Exception('Found ' + self.preanalysis + ', expecting ' + '""')
++            raise Exception('Found ' + self.preanalysis - ', expecting ' + '""')
+ 
+         return result
+ 
+</pre><h3>Mutant 22</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -25,7 +25,7 @@
+         result = self.start()
+ 
+         if self.preanalysis != '$':
+-            raise Exception('Found ' + self.preanalysis + ', expecting ' + '""')
++            raise Exception('Found ' + self.preanalysis + 'XX, expecting XX' + '""')
+ 
+         return result
+ 
+</pre><h3>Mutant 23</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -25,7 +25,7 @@
+         result = self.start()
+ 
+         if self.preanalysis != '$':
+-            raise Exception('Found ' + self.preanalysis + ', expecting ' + '""')
++            raise Exception('Found ' + self.preanalysis + ', expecting ' - '""')
+ 
+         return result
+ 
+</pre><h3>Mutant 24</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -25,7 +25,7 @@
+         result = self.start()
+ 
+         if self.preanalysis != '$':
+-            raise Exception('Found ' + self.preanalysis + ', expecting ' + '""')
++            raise Exception('Found ' + self.preanalysis + ', expecting ' + 'XX""XX')
+ 
+         return result
+ 
+</pre><h3>Mutant 25</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -30,7 +30,7 @@
+         return result
+ 
+     def start(self):
+-        return self.expression(0)
++        return self.expression(1)
+ 
+     def expression(self, amount):
+         if self.preanalysis == '$':
+</pre><h3>Mutant 27</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -33,7 +33,7 @@
+         return self.expression(0)
+ 
+     def expression(self, amount):
+-        if self.preanalysis == '$':
++        if self.preanalysis == 'XX$XX':
+             raise Exception('Found $, expecting token')
+         result_term = self.term(amount)
+         result_eq = self.expression_quote(result_term)
+</pre><h3>Mutant 28</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -34,7 +34,7 @@
+ 
+     def expression(self, amount):
+         if self.preanalysis == '$':
+-            raise Exception('Found $, expecting token')
++            raise Exception('XXFound $, expecting tokenXX')
+         result_term = self.term(amount)
+         result_eq = self.expression_quote(result_term)
+         return result_eq
+</pre><h3>Mutant 36</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -44,7 +44,7 @@
+             self.operator()
+             right = self.term(left)
+             return self.expression_quote(left + right)
+-        elif self.preanalysis == '-':
++        elif self.preanalysis == 'XX-XX':
+             self.operator()
+             right = self.term(left)
+             return self.expression_quote(left - right)
+</pre><h3>Mutant 37</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -46,7 +46,7 @@
+             return self.expression_quote(left + right)
+         elif self.preanalysis == '-':
+             self.operator()
+-            right = self.term(left)
++            right = None
+             return self.expression_quote(left - right)
+         else:
+             return left
+</pre><h3>Mutant 38</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -47,7 +47,7 @@
+         elif self.preanalysis == '-':
+             self.operator()
+             right = self.term(left)
+-            return self.expression_quote(left - right)
++            return self.expression_quote(left + right)
+         else:
+             return left
+ 
+</pre><h3>Mutant 40</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -52,7 +52,7 @@
+             return left
+ 
+     def term(self, amount):
+-        if self.preanalysis == '$':
++        if self.preanalysis == 'XX$XX':
+             raise Exception('Found $, expecting token')
+         result_factor = self.factor(amount)
+         result_tq = self.term_quote(result_factor)
+</pre><h3>Mutant 41</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -53,7 +53,7 @@
+ 
+     def term(self, amount):
+         if self.preanalysis == '$':
+-            raise Exception('Found $, expecting token')
++            raise Exception('XXFound $, expecting tokenXX')
+         result_factor = self.factor(amount)
+         result_tq = self.term_quote(result_factor)
+         return result_tq
+</pre><h3>Mutant 53</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -71,7 +71,7 @@
+             return left
+ 
+     def factor(self, amount):
+-        if self.preanalysis == '$':
++        if self.preanalysis == 'XX$XX':
+             raise Exception('Found $, expecting token')
+         result_primary = self.primary(amount)
+         result_fq = self.factor_quote(result_primary)
+</pre><h3>Mutant 54</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -72,7 +72,7 @@
+ 
+     def factor(self, amount):
+         if self.preanalysis == '$':
+-            raise Exception('Found $, expecting token')
++            raise Exception('XXFound $, expecting tokenXX')
+         result_primary = self.primary(amount)
+         result_fq = self.factor_quote(result_primary)
+         return result_fq
+</pre><h3>Mutant 62</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -86,7 +86,7 @@
+             return left
+ 
+     def primary(self, amount):
+-        if self.preanalysis == '$':
++        if self.preanalysis == 'XX$XX':
+             raise Exception('Found $, expecting token')
+         elif self.preanalysis == '(':
+             # TODO: open parenthesis
+</pre><h3>Mutant 63</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -87,7 +87,7 @@
+ 
+     def primary(self, amount):
+         if self.preanalysis == '$':
+-            raise Exception('Found $, expecting token')
++            raise Exception('XXFound $, expecting tokenXX')
+         elif self.preanalysis == '(':
+             # TODO: open parenthesis
+             self.operator()
+</pre><h3>Mutant 65</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -88,7 +88,7 @@
+     def primary(self, amount):
+         if self.preanalysis == '$':
+             raise Exception('Found $, expecting token')
+-        elif self.preanalysis == '(':
++        elif self.preanalysis == 'XX(XX':
+             # TODO: open parenthesis
+             self.operator()
+             result = self.expression(amount)  # TODO
+</pre><h3>Mutant 66</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -91,7 +91,7 @@
+         elif self.preanalysis == '(':
+             # TODO: open parenthesis
+             self.operator()
+-            result = self.expression(amount)  # TODO
++            result = None  # TODO
+             # TODO: close parenthesis
+             self.operator()
+             return result
+</pre><h3>Mutant 67</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -99,7 +99,7 @@
+             try:
+                 float(self.preanalysis)
+             except ValueError:
+-                raise Exception('Found ' + self.preanalysis + 'expecting "(" or number')
++                raise Exception('XXFound XX' + self.preanalysis + 'expecting "(" or number')
+             return self.number()
+ 
+     def number(self):
+</pre><h3>Mutant 68</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -99,7 +99,7 @@
+             try:
+                 float(self.preanalysis)
+             except ValueError:
+-                raise Exception('Found ' + self.preanalysis + 'expecting "(" or number')
++                raise Exception('Found ' - self.preanalysis + 'expecting "(" or number')
+             return self.number()
+ 
+     def number(self):
+</pre><h3>Mutant 69</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -99,7 +99,7 @@
+             try:
+                 float(self.preanalysis)
+             except ValueError:
+-                raise Exception('Found ' + self.preanalysis + 'expecting "(" or number')
++                raise Exception('Found ' + self.preanalysis - 'expecting "(" or number')
+             return self.number()
+ 
+     def number(self):
+</pre><h3>Mutant 70</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -99,7 +99,7 @@
+             try:
+                 float(self.preanalysis)
+             except ValueError:
+-                raise Exception('Found ' + self.preanalysis + 'expecting "(" or number')
++                raise Exception('Found ' + self.preanalysis + 'XXexpecting "(" or numberXX')
+             return self.number()
+ 
+     def number(self):
+</pre><h3>Mutant 72</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -103,7 +103,7 @@
+             return self.number()
+ 
+     def number(self):
+-        if self.preanalysis == '$':
++        if self.preanalysis == 'XX$XX':
+             raise Exception('Found $, expecting token')
+         try:
+             if '.' in self.preanalysis:
+</pre><h3>Mutant 73</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -104,7 +104,7 @@
+ 
+     def number(self):
+         if self.preanalysis == '$':
+-            raise Exception('Found $, expecting token')
++            raise Exception('XXFound $, expecting tokenXX')
+         try:
+             if '.' in self.preanalysis:
+                 result = float(self.preanalysis)
+</pre><h3>Mutant 78</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -111,7 +111,7 @@
+             else:
+                 result = int(self.preanalysis)
+         except ValueError:
+-            raise Exception('Found ' + self.preanalysis + 'expecting number')
++            raise Exception('XXFound XX' + self.preanalysis + 'expecting number')
+         self.next_token()
+         return result
+ 
+</pre><h3>Mutant 79</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -111,7 +111,7 @@
+             else:
+                 result = int(self.preanalysis)
+         except ValueError:
+-            raise Exception('Found ' + self.preanalysis + 'expecting number')
++            raise Exception('Found ' - self.preanalysis + 'expecting number')
+         self.next_token()
+         return result
+ 
+</pre><h3>Mutant 80</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -111,7 +111,7 @@
+             else:
+                 result = int(self.preanalysis)
+         except ValueError:
+-            raise Exception('Found ' + self.preanalysis + 'expecting number')
++            raise Exception('Found ' + self.preanalysis - 'expecting number')
+         self.next_token()
+         return result
+ 
+</pre><h3>Mutant 81</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -111,7 +111,7 @@
+             else:
+                 result = int(self.preanalysis)
+         except ValueError:
+-            raise Exception('Found ' + self.preanalysis + 'expecting number')
++            raise Exception('Found ' + self.preanalysis + 'XXexpecting numberXX')
+         self.next_token()
+         return result
+ 
+</pre><h3>Mutant 83</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -116,7 +116,7 @@
+         return result
+ 
+     def operator(self):
+-        if self.preanalysis == '$':
++        if self.preanalysis == 'XX$XX':
+             raise Exception('Found $, expecting token')
+         self.next_token()
+ 
+</pre><h3>Mutant 84</h3><pre>--- C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
++++ C:\Users\Matheus\PycharmProjects\pycalculator\pycalculator\grammar.py
+@@ -117,6 +117,6 @@
+ 
+     def operator(self):
+         if self.preanalysis == '$':
+-            raise Exception('Found $, expecting token')
++            raise Exception('XXFound $, expecting tokenXX')
+         self.next_token()
+ 
+</pre></body></html>
